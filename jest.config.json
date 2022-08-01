@@ -1,0 +1,11 @@
+{
+  "testMatch": ["<rootDir>/__tests__/**/?(*.)+(spec|test).[jt]s?(x)"],
+  "transformIgnorePatterns": ["<rootDir>/node_modules/"],
+  "setupFilesAfterEnv": ["<rootDir>/jest.setup.js"],
+  "moduleDirectories": ["node_modules", "src", "."],
+  "moduleFileExtensions": ["js", "ts", "jsx", "tsx"],
+  "moduleNameMapper": {
+    "\\.svg$": "<rootDir>/__tests__/__mocks__/svgrMock.tsx"
+  },
+  "collectCoverage": true
+}
